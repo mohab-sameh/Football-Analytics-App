@@ -5,11 +5,13 @@ version: 0.2
 phases:
   install:
     commands:
+      - kill -INT 888
       - pip install -r requirements.txt
       - pip install streamlit
   build:
     commands:
-      - echo "pycodestyle found no issues!"
+      - echo "Build successfull!"
+  post_build:
       - streamlit run app.py
 
   
