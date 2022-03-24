@@ -15,4 +15,8 @@ phases:
     commands:
       - echo "post build successfull"
 
+
+artifacts:
+  files:
+    - '**/*'
   
