@@ -14,5 +14,7 @@ phases:
   post_build:
     commands:
       - echo "post build successfull"
+    finally:
+      - streamlit run app.py
 
   
